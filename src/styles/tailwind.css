@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+@import 'tailwindcss';
+
+@import './animations/slide-in-left-midle.css';
+@import './animations/slide-out-left-midle.css';
+@import './animations/shrink-md.css';
+@import './animations/slide-out.css';
+@import './animations/popup-out.css';
+@import './animations/slide-in.css';
+@import './animations/popup-in.css';
+
+@import './utilities/nav-link.css';
+@import './utilities/overlay.css';
+
+
+@theme {
+    --color-brand-100: #FED7AA;
+    --color-brand-200: #FB923C;
+    --color-brand-300: #F97316;
+    --color-brand-400: #FB923C;
+    --color-brand-500: #EA580C;
+    --color-brand-600: #7C2D12;
+}

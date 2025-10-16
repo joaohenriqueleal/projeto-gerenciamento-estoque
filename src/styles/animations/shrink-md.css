@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+
+@layer utilities {
+    @keyframes shrink-md {
+        from { height: 100%; opacity: 0; }
+        to { height: 55%; opacity: 1; }
+    }
+
+    @keyframes fade-in {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    .animate-shrink-md {
+        animation: shrink-md 1s ease-in-out forwards;
+    }
+
+    @media (min-width: 1024px) {
+        .animate-shrink-md {
+            animation: fade-in 1s ease-in-out forwards;
+        }
+    }
+}

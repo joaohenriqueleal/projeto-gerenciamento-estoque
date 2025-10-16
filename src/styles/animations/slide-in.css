@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+
+@layer utilities {
+    @keyframes slide-in {
+        from { left: 100%; }
+        to { left: 0; }
+    }
+
+    .animate-slide-in {
+        animation: slide-in .3s ease-in-out forwards;
+    }
+}

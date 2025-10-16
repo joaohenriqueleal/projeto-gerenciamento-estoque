@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+
+@layer utilities {
+    @keyframes slide-in-left-midle {
+        from { width: 0%; }
+        to { width: 50%; }
+    }
+
+    .animate-slide-in-left-midle {
+        animation: slide-in-left-midle .3s ease-in-out forwards;
+    }
+
+    @keyframes slide-in-left-semi-midle {
+        from { width: 0%; }
+        to { width: 33%; }
+    }
+
+    @keyframes slide-in-left-init {
+        from { width: 0%; }
+        to { width: 20%; }
+    }
+
+    @media screen and (min-width: 800px) {
+        .animate-slide-in-left-midle {
+            animation: slide-in-left-semi-midle .3s ease-in-out forwards;
+        }
+    }
+    @media screen and (min-width: 1200px) {
+        .animate-slide-in-left-midle {
+            animation: slide-in-left-init .3s ease-in-out forwards;
+        }
+    }
+}

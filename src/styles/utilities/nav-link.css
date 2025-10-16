@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+
+@utility nav-link {
+    @apply flex gap-2 p-4 bg-gray-50 items-center font-black
+        hover:bg-gray-200 text-xl transition duration-300 rounded;
+}

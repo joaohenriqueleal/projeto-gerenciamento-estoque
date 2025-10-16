@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+
+@layer utilities {
+    @keyframes slide-out-left-midle {
+        from { width: 50%; }
+        to { width: 0%; }
+    }
+
+    .animate-slide-out-left-midle {
+        animation: slide-out-left-midle .3s ease-in-out forwards;
+    }
+}

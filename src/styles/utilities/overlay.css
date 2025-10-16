@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+
+@layer utilities {
+    .overlay {
+        @apply fixed inset-0 bg-black/50 z-9;
+    }
+
+    .overlay-center {
+        @apply fixed inset-0 bg-black/40 z-50 flex items-center justify-center;
+    }
+
+    .overlay-blur {
+        @apply fixed inset-0 z-50 bg-black/30 backdrop-blur-sm;
+    }
+}

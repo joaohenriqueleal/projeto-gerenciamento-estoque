@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+
+@layer utilities {
+    @keyframes popup-in {
+        from { right: -100%; }
+        to { right: 16px; }
+    }
+
+    .animate-popup-in {
+        animation: popup-in .3s ease-in-out forwards;
+    }
+}
