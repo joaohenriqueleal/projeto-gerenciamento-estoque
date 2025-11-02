@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
+import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
 import { useState, useEffect } from "react"
 
 import RegisterCategory from '../pages/RegisterCategory'
@@ -11,7 +11,6 @@ import Login from '../pages/Login'
 import Home from '../pages/Home'
 
 import setRedirect from '../shared/redirect/setRedirect.js'
-
 
 export default function App() {
     const [authenticated, setAuthenticated] = useState(false)
@@ -54,6 +53,7 @@ export default function App() {
                 <Route path="/register" element={
                     authenticated ? <Navigate to="/" /> : <Register setAuth={setAuthenticated} />
                 } />
+
                 <Route path="*" element={<Navigate to={authenticated ? "/" : "/login"} />} />
             </Routes>
         </Router>
