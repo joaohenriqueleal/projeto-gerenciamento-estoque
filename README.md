@@ -27,7 +27,7 @@ Neste projeto aprendi a manupulação complexa de estados, a ultilizar classes t
 Approfundei meus conhecimentos na manipulação de gráficos com chart.JS por meio das bibliotecas dessa tecnoligia disponibilizadas pra aplicações React.
 Aprendi a modularização de componentes tailwind, e animações simples com esta mesma tecnologia.
 
-<img src="https://github.com/joaohenriqueleal/projeto-gerenciamento-estoque/blob/main/docs/home-screenshot.png" />
+<img src="https://github.com/joaohenriqueleal/projeto-gerenciamento-estoque/blob/main/screenshots/home-screenshot.png" />
 
 ## CONTATOS
 
