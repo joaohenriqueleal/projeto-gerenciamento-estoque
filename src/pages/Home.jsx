@@ -21,7 +21,7 @@ export default function Home({ setAuth }) {
     const [categories, setCategories] = useState([])
     const [products, setProducts] = useState([])
     const [releases, setReleases] = useState([])
-    const [lowProducts, setLowProducts] = useState([]) // 👈 novo state
+    const [lowProducts, setLowProducts] = useState([])
 
     useEffect(() => {
         const user = loadActualUser()
@@ -35,7 +35,6 @@ export default function Home({ setAuth }) {
             setReleases(rels)
             setActualUser(user)
 
-            // 👇 calcula os produtos com baixo estoque logo após o carregamento
             const lows = prods.filter(p => {
                 let stock = p.storage
                 rels.forEach(r => {
@@ -201,7 +200,7 @@ export default function Home({ setAuth }) {
                 </section>
 
                 <section
-                    className='bg-white p-6 rounded-xl shadow w-full h-max'
+                    className='bg-white p-6 rounded-xl shadow w-full h-full'
                 >
                     <ChartParticipationValueCategories
                         getTotalValueOfCategory={getTotalValueOfCategory}
@@ -210,7 +209,7 @@ export default function Home({ setAuth }) {
 
                 <section
                     className='bg-white p-6 rounded-xl shadow w-full m-auto
-                        flex flex-col gap-4 items-center'
+                        flex flex-col gap-4 items-center h-full'
                 >
                     <h1 className='font-black pb-2 text-xl'>
                         Progresso das suas metas
@@ -253,7 +252,7 @@ export default function Home({ setAuth }) {
                             />
                         ))
                     ) : (
-                        <p className='text-gray-500'>
+                        <p className='text-gray-500 text-center'>
                             Nenhum produto com baixo estoque.
                         </p>
                     )}

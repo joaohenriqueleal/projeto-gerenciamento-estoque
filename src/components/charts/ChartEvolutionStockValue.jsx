@@ -184,9 +184,9 @@ export default function ChartEvolutionStockValue() {
                 {chartData.labels.length > 0 ? (
                     <Line data={chartData} options={options} />
                 ) : (
-                    <span className="text-slate-400 font-semibold text-base">
+                    <p className="text-slate-400 font-semibold text-base text-center w-full">
                         Nenhum dado para exibir neste período
-                    </span>
+                    </p>
                 )}
             </div>
         </>

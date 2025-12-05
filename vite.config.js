@@ -4,6 +4,6 @@ import tailwindcss from '@tailwindcss/vite';
 
 
 export default defineConfig({
-    base: '/projeto-gerenciamento-estoque/',
+    base: '/storage-management-inventory/',
     plugins: [react(), tailwindcss()],
 });
